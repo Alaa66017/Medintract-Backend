@@ -15,10 +15,6 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 app.use(cors());
 
 // MongoDB Connection
-const dbUsername = encodeURIComponent('mohamedmadian'); // Ensure the email is encoded
-const dbPassword = encodeURIComponent('0180421332MJ'); // Encode special characters if any
-// const mongoUri = `mongodb+srv://${dbUsername}:${dbPassword}@medintract.ynvyqdj.mongodb.net/medintract?retryWrites=true&w=majority`;
-// const mongoUri = `mongodb+srv://${dbUsername}:${dbPassword}@medintract.ynvyqdj.mongodb.net/`;
 const mongoUri = `mongodb://localhost:27017/medintract`;
 
 mongoose
